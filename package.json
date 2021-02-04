@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/KazChe/appsync-backend#readme",
   "devDependencies": {
-    "serverless": "^2.4.0"
+    "serverless": "^2.4.0",
+    "serverless-appsync-plugin": "^1.6.0"
   }
 }
