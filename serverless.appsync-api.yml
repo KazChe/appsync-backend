@@ -1,0 +1,2 @@
+name: appsyncbackend
+schema: schema.api.graphql
