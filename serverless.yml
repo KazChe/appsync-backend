@@ -8,6 +8,7 @@ plugins:
 provider:
   name: aws
   runtime: nodejs12.x
+  region: us-east-1
 
 package:
   exclude:
@@ -16,12 +17,7 @@ package:
 
 custom:
   appSync:
-    - {$file(serveless.appsync-api.yml)}
-
-
-functions:
-  hello:
-    handler: handler.hello
+    - ${file(serverless.appsync-api.yml)}
 
 resources:
   Resources:
