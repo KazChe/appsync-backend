@@ -11,10 +11,8 @@ provider:
   runtime: nodejs12.x
   region: us-east-1
   environment:
+    STAGE: ${self:custom.stage}
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1"
-
-  iamRoleStatements:
-    -
 
 package:
   exclude:
@@ -22,6 +20,7 @@ package:
     - package.json
 
 custom:
+  stage: ${opt:stage, self:provider.stage}
   appSync:
     - ${file(serverless.appsync-api.yml)}
 
