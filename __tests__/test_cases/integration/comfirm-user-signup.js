@@ -11,8 +11,17 @@ describe("when a confirmUserSignup runs", () => {
         await when.we_invoke_confirmUserSignup(username, name, email)
 
         const ddbUser = await then.user_exists_in_UsersTable(username)
-        expect(ddbUser).toEqual({
-
+        expect(ddbUser).toMatchObject({
+            id: username,
+            name,
+            followersCount: 0,
+            followingCount: 0,
+            tweetsCount: 0,
+            likesCounts: 0
         })
+
+        const [firstName, lastName] = name.split(' ')
+        expect(ddbUser.screenName).toContain(firstName)
+        expect(ddbUser.screenName).toContain(lastName)
     })
 })

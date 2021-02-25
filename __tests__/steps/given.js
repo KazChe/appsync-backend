@@ -7,6 +7,12 @@ const a_random_user = () => {
     const name = `${firstName} ${lastName} ${suffix}`
     const password = chance.string({ length: 8 })
     const email = `${firstName}`-`${lastName}`-`${suffix}@probabo.com`
+
+    return {
+        name,
+        password,
+        email
+    }
 }
 
 module.exports = {

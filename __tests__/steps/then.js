@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk')
 
 
-const user_exists_in_UsersTable = async (username) => {
+const user_exists_in_UsersTable = async (id) => {
     const DynamoDB = new AWS.DynamoDB.DocumentClient()
 
     console.log(`Looking for user [${id}] in table [${process.env.USERS_TABLE}]`)
@@ -12,9 +12,9 @@ const user_exists_in_UsersTable = async (username) => {
         }
     }).promise()
 
-    expect(resp.item).toBeTruthy()
+    expect(resp.Item).toBeTruthy()
 
-    return resp.item
+    return resp.Item
 }
 module.exports = {
     user_exists_in_UsersTable
