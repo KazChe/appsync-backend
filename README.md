@@ -12,4 +12,9 @@ Note that for [serverless-export-env](https://www.npmjs.com/package/serverless-e
 npm run sls export-env
 ```
 
+aws cli for creating a user
+
+```
+aws cognito-idp --region us-east-1 sign-up  --client-id <add_value_from_env_WEB_COGNITO_USER_POOL_CLIENT_ID>> --username "add_email_address"  --password "add_password" --user-attributes Name=name,Value=kaz
+```
 
