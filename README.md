@@ -23,3 +23,22 @@ Confirm the user in cognito user pool.
 Go to appsync > queries and login with that user
 Select fields from `getMyProfile` and see results returned.
 
+```{
+     "data": {
+       "getMyProfile": {
+         "bio": null,
+         "birthdate": null,
+         "createdAt": "2021-03-05T19:35:18.384Z",
+         "followersCount": 0,
+         "followingCount": 0,
+         "id": "d1ca0d-d7df-4d06-aed4-15f0af7a",
+         "imageUrl": null,
+         "likesCounts": 0,
+         "location": null,
+         "name": "kaz",
+         "screenName": "kaz7EB6TUP3"
+       }
+     }
+   }
+```
+
