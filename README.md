@@ -21,7 +21,7 @@ aws cognito-idp --region us-east-1 sign-up  --client-id <add_value_from_env_WEB_
 Then login to aws console > coginto and make sure the user is created.
 Confirm the user in cognito user pool.
 Go to appsync > queries and login with that user
-Select fields from `getMyProfile` and see results returned.
+Select fields from `getMyProfile` with exception of tweets field and see default results returned.
 
 ```{
      "data": {
