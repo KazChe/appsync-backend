@@ -1,4 +1,5 @@
 const chance = require('chance').Chance()
+const velocityUtil = require('amplify-appsync-simulator/lib/velocity/util')
 
 const a_random_user = () => {
     const firstName = chance.first({ 'nationality': 'en' })
