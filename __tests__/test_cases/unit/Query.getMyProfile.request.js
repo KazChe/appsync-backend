@@ -1,5 +1,5 @@
 const given = require('../../steps/given')
-const when = require('../../steps/then')
+const when = require('../../steps/when')
 const chance = require('chance').Chance()
 const path = require('path')
 
