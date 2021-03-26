@@ -72,8 +72,13 @@ const we_invoke_an_appsync_template = (templatePath, context) => {
     return JSON.parse(compiler.render(context))
 }
 
+const a_user_calls_getMyProfile = () => {
+
+}
+
 module.exports = {
     we_invoke_confirmUserSignup,
     a_user_signs_up,
-    we_invoke_an_appsync_template
+    we_invoke_an_appsync_template,
+    a_user_calls_getMyProfile
 }
