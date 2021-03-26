@@ -64,7 +64,7 @@ const an_authenticated_user = async () => {
         AuthFlow: 'USER_PASSWORD_AUTH',
         ClientId: clientId,
         AuthParameters: {
-            USERNAME: username
+            USERNAME: username,
             PASSWORD: password
         }
     }).promise()

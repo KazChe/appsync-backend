@@ -72,7 +72,7 @@ const we_invoke_an_appsync_template = (templatePath, context) => {
     return JSON.parse(compiler.render(context))
 }
 
-const a_user_calls_getMyProfile = () => {
+const a_user_calls_getMyProfile = (user) => {
 
 }
 
